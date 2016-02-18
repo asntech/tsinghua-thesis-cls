@@ -4,7 +4,7 @@
     <id>http://www.zotero.org/styles/chinese-gb7714-2005-numeric</id>
     <link href="http://www.zotero.org/styles/chinese-gb7714-2005-numeric" rel="self"/>
     <link href="http://gradschool.ustc.edu.cn/ylb/material/xw/wdxz/19.pdf" rel="documentation"/>
-    <link http://www.zotero.org/styles/chinese-gb7714-2005-numeric" rel="template"/>
+    <link href="http://www.zotero.org/styles/chinese-gb7714-2005-numeric" rel="template"/>
 
     <author>
       <name>asntech</name>
