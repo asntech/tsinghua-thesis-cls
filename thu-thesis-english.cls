@@ -2,7 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
 
 <info>
-    <title>Tsinghua Thesis</title>
+    <title>Tsinghua Thesis English</title>
     <id>http://www.zotero.org/styles/chinese-gb7714-2005-numeric</id>
     <link href="http://www.zotero.org/styles/chinese-gb7714-2005-numeric" rel="self"/>
     <link href="http://gradschool.ustc.edu.cn/ylb/material/xw/wdxz/19.pdf" rel="documentation"/>
