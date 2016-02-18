@@ -2,8 +2,8 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <info>
     <title>Tsinghua Thesis Chinese</title>
-    <id>http://www.zotero.org/styles/thu-thesis-english</id>
-    <link href="http://www.zotero.org/styles/thu-thesis-english" rel="self"/>
+    <id>http://www.zotero.org/styles/chinese-gb7714-1987-numeric</id>
+    <link href="http://www.zotero.org/styles/chinese-gb7714-1987-numeric" rel="self"/>
     <link href="http://www.lib.tsinghua.edu.cn/service/GB7714-87.doc" rel="documentation"/>
     <link http://www.zotero.org/styles/chinese-gb7714-1987-numeric" rel="template"/>
 
