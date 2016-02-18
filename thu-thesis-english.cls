@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
+  <info>
+    <title>Tsinghua Thesis Chinese</title>
+    <id>http://www.zotero.org/styles/chinese-gb7714-1987-numeric</id>
+    <link href="http://www.zotero.org/styles/chinese-gb7714-1987-numeric" rel="self"/>
+    <link href="http://www.lib.tsinghua.edu.cn/service/GB7714-87.doc" rel="documentation"/>
+    <link http://www.zotero.org/styles/chinese-gb7714-1987-numeric" rel="template"/>
 
-<info>
-    <title>Tsinghua Thesis English</title>
-    <id>http://www.zotero.org/styles/chinese-gb7714-2005-numeric</id>
-    <link href="http://www.zotero.org/styles/chinese-gb7714-2005-numeric" rel="self"/>
-    <link href="http://gradschool.ustc.edu.cn/ylb/material/xw/wdxz/19.pdf" rel="documentation"/>
     <author>
       <name>asntech</name>
       <email>azez.khan@gmail.com</email>
@@ -14,16 +15,13 @@
     <category field="engineering"/>
     <category field="generic-base"/>
     <category field="science"/>
-    <link href="http://www.zotero.org/styles/chinese-gb7714-2005-numeric" rel="template"/>
     <summary>This style is for Tsinghua University thesis of bachelor, master and doctoral level.</summary>
     <updated>2016-2-18T09:38:41+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="author">
     <names variable="author">
-      <name initialize-with=" " name-as-sort-order="all" sort-separator=" " delimiter=", " delimiter-precedes-last="always">
-        <name-part name="family" text-case="capitalize-first"/>
-      </name>
+      <name initialize-with=" " name-as-sort-order="all" sort-separator=" " delimiter=", " delimiter-precedes-last="always"/>
     </names>
   </macro>
   <macro name="recipient">
@@ -69,10 +67,10 @@
         <text macro="title" suffix="[M]. "/>
       </else-if>
       <else-if type="paper-conference">
-        <text macro="title" suffix="[C]//"/>
+        <text macro="title" suffix="[A]. "/>
       </else-if>
       <else-if type="chapter paper-conference" match="any">
-        <text macro="title" suffix="[G]//"/>
+        <text macro="title" suffix="[A]. 见: "/>
       </else-if>
       <else-if type="webpage">
         <text macro="title" suffix="[EB/OL]. "/>
@@ -88,9 +86,7 @@
   </macro>
   <macro name="secondaryAuthor">
     <names variable="editor">
-      <name initialize-with=" " name-as-sort-order="all" sort-separator=" " delimiter=", " delimiter-precedes-last="always">
-        <name-part name="family" text-case="capitalize-first"/>
-      </name>
+      <name initialize-with="." delimiter=", "/>
     </names>
     <names variable="translator">
       <name name-as-sort-order="all" sort-separator=" " delimiter=", " delimiter-precedes-last="always" suffix=", 译"/>
@@ -98,12 +94,18 @@
   </macro>
   <macro name="publisher">
     <choose>
-      <if type="chapter paper-conference" match="any">
-        <text variable="container-title" suffix=". "/>
+      <if type="paper-conference">
+        <text variable="container-title" suffix="[C]. "/>
       </if>
       <else-if type="report">
         <text variable="collection-title" suffix=", "/>
         <text variable="number" suffix=", "/>
+      </else-if>
+      <else-if type="chapter paper-conference" match="any">
+        <text variable="container-title" suffix="[M]. "/>
+      </else-if>
+      <else-if type="webpage">
+        <text variable="container-title" suffix=". "/>
       </else-if>
       <else-if type="bill legislation" match="any">
         <text variable="container-title" prefix=". "/>
@@ -123,27 +125,14 @@
     <group delimiter=", ">
       <text variable="publisher"/>
       <choose>
-        <if type="webpage" variable="container-title" match="all">
-          <date variable="issued" suffix=". ">
+        <if type="patent">
+          <date variable="issued">
             <date-part name="year"/>
             <date-part name="month" form="numeric-leading-zeros" prefix="-"/>
             <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
           </date>
         </if>
-        <else-if type="webpage"/>
-        <else-if type="patent">
-          <date variable="issued">
-            <date-part name="year"/>
-            <date-part name="month" form="numeric-leading-zeros" prefix="-"/>
-            <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
-          </date>
-        </else-if>
-        <else-if variable="publisher">
-          <date variable="issued">
-            <date-part name="year"/>
-          </date>
-        </else-if>
-        <else-if type="bill legislation" match="any"/>
+        <else-if type="bill legislation webpage" match="any"/>
         <else>
           <date variable="issued">
             <date-part name="year"/>
@@ -160,12 +149,12 @@
   <macro name="referenceDate">
     <choose>
       <if type="webpage">
-        <date variable="issued" prefix="(" suffix=")">
+        <date variable="issued">
           <date-part name="year"/>
           <date-part name="month" form="numeric-leading-zeros" prefix="-"/>
           <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
         </date>
-        <date variable="accessed" prefix="[" suffix="]">
+        <date variable="accessed" prefix="/">
           <date-part name="year"/>
           <date-part name="month" form="numeric-leading-zeros" prefix="-"/>
           <date-part name="day" form="numeric-leading-zeros" prefix="-"/>
@@ -185,7 +174,7 @@
   </macro>
   <citation collapse="citation-number">
     <sort>
-      <key variable="citation-number" sort="ascending"/>
+      <key variable="citation-number" sort="descending"/>
     </sort>
     <layout vertical-align="sup" prefix="[" suffix="]" delimiter=",">
       <text variable="citation-number"/>
