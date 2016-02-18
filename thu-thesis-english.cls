@@ -186,7 +186,7 @@
       <text macro="author" suffix=". "/>
       <text macro="titleField"/>
       <text macro="secondaryAuthor" suffix=". "/>
-      <text variable="edition" prefix="第" suffix="版. "/>
+      <text variable="edition" prefix=" " suffix="ed. "/>
       <text macro="publisher"/>
       <text macro="pageField" prefix=": "/>
       <text macro="referenceDate"/>
