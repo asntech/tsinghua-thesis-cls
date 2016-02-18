@@ -77,7 +77,7 @@
       </else-if>
       <else-if type="patent">
         <text macro="title"/>
-        <text variable="number" prefix=": 中国, " suffix="[P].  "/>
+        <text variable="number" prefix=": China, " suffix="[P].  "/>
       </else-if>
       <else>
         <text macro="title" suffix="[J]. "/>
