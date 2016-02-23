@@ -11,10 +11,10 @@ Go to MS Word's Add-Ins, and click 'Choose citation style'. Next, click 'Get mor
 ![alt tag](https://raw.githubusercontent.com/asntech/tsinghua-thesis-csl/master/csl-1.png)
 
 ###Step II:
+Locate the 'Tsinghua Thesis English/Chinese' style in the installed style list and click 'Use this style' and hit 'Done' button.
 ![alt tag](https://raw.githubusercontent.com/asntech/tsinghua-thesis-csl/master/csl-2.png)
 
 ###Step III:
+You are done! :) 
 ![alt tag](https://raw.githubusercontent.com/asntech/tsinghua-thesis-csl/master/csl-3.png)
-
-
 
