@@ -7,7 +7,7 @@ https://raw.githubusercontent.com/asntech/tsinghua-thesis-csl/master/thu-thesis-
 https://raw.githubusercontent.com/asntech/tsinghua-thesis-csl/master/thu-thesis-chinese.csl
 
 ###Step I:
-Go to MS Word's Add-Ins, and click 'Choose citation style'. Next, click 'Get more styles' tab and past the URL provide above into 'Download style box' and hit the download. 
+Go to MS Word's Add-Ins, and click 'Choose citation style'. Next, click 'Get more styles' tab and past the URL provided above into 'Download style box' and hit the download button. 
 ![alt tag](https://raw.githubusercontent.com/asntech/tsinghua-thesis-csl/master/csl-1.png)
 
 ###Step II:
@@ -17,4 +17,8 @@ Locate the 'Tsinghua Thesis English/Chinese' style in the installed style list a
 ###Step III:
 You are done! :) 
 ![alt tag](https://raw.githubusercontent.com/asntech/tsinghua-thesis-csl/master/csl-3.png)
+
+
+###Note: 
+You can either install English or Chinese version at a time but not both.
 
